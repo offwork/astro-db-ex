@@ -2,7 +2,7 @@ import { column, defineDb, defineTable } from 'astro:db';
 
 const Contact = defineTable({
   columns: {
-    id: column.number({ primaryKey: true }),
+    id: column.text({ primaryKey: true }),
     name: column.text(),
     lastName: column.text(),
     email: column.text(),
